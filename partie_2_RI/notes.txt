@@ -19,7 +19,7 @@ $ curl -X POST -H 'Content-Type: application/json' 'http://localhost:8983/solr/p
 
 
 Accès à la page html :
-http://localhost:8983/solr/presse/browse?q=text%3AOuganda
+http://localhost:8983/solr/presse/browse
 
 
 Effacer index + réindexer :
