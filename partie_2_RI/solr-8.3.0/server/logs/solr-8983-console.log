@@ -1,0 +1,18 @@
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+2024-04-28 14:54:00.813 INFO  (main) [   ] o.e.j.u.log Logging initialized @1190ms to org.eclipse.jetty.util.log.Slf4jLog
+2024-04-28 14:54:00.939 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/charlotte/Bureau/projet_TAL_RI/projet_TAL/partie_2_RI/solr-8.3.0/server/etc/jetty.xml
+2024-04-28 14:54:01.059 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2024-04-28 14:54:01.059 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/charlotte/Bureau/projet_TAL_RI/projet_TAL/partie_2_RI/solr-8.3.0/server/etc/jetty-http.xml
+2024-04-28 14:54:01.077 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 11.0.22+7-post-Ubuntu-0ubuntu222.04.1
+2024-04-28 14:54:01.095 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/charlotte/Bureau/projet_TAL_RI/projet_TAL/partie_2_RI/solr-8.3.0/server/contexts/] at interval 0
+2024-04-28 14:54:01.464 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2024-04-28 14:54:01.474 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2024-04-28 14:54:01.474 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2024-04-28 14:54:01.476 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2024-04-28 14:54:01.601 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-04-28 14:54:01.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2024-04-28 14:54:01.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-04-28 14:54:01.614 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/charlotte/Bureau/projet_TAL_RI/projet_TAL/partie_2_RI/solr
+2024-04-28 14:54:01.615 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2024-04-28T14:54:01.615176Z
