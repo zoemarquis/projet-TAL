@@ -1,0 +1,42 @@
+#set($docId = $doc.getFirstValue($request.schema.uniqueKeyField.name))
+
+
+<div class="result-document">
+  #set( $keeps = ["headline", "text", "category", "score"] )
+  #set ( $fieldRenamer = {"headline" : "titre", "text" : "texte", "category" : "catégorie"})
+  
+  <table>
+    #foreach( $fieldName in $doc.fieldNames )
+      #if($keeps.contains($fieldName))
+        #if($fieldRenamer.containsKey($fieldName))
+          #set ($normName=$fieldRenamer.get($fieldName))
+        #else
+          #set ($normName=$fieldName)
+        #end
+        <tr>
+          <th align="right" valign="top" style="field-name">
+            $esc.html($normName):
+          </th>
+
+          <td align="left" valign="top">
+            #field($fieldName)
+          </td>
+        </tr>
+      #end
+    #end
+    <tr>
+      <th align="right">url:</th>
+      <td>
+        <a href="#url_for_home?q=id:$docId">$docId</a>
+      </td>
+    </tr>
+  </table>
+
+  #if($debug)
+    <a href="#" onclick='jQuery(this).siblings("pre").toggle(); return false;'>toggle explain</a>
+
+    <pre style="display:none">
+      $response.getExplainMap().get($docId)
+    </pre>
+  #end
+</div>
