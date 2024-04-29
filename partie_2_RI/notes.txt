@@ -1,3 +1,9 @@
+Lancer le programme :
+Ouvrir un terminal dans projet_TAL/partie_2_RI/solr
+Faire commande : $ ./bin/solr start
+Accès à la page html : http://localhost:8983/solr/presse/browse
+
+
 
 convertir les données en json pour pouvoir les indexer :
 awk -F'\t' '{OFS=","; print}' train.tsv > train.csv
@@ -18,8 +24,7 @@ $ curl -X POST -H 'Content-Type: application/json' 'http://localhost:8983/solr/p
     "QTime":8}}
 
 
-Accès à la page html :
-http://localhost:8983/solr/presse/browse
+
 
 
 Effacer index + réindexer :
